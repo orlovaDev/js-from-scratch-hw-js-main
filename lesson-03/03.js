@@ -2,13 +2,15 @@
 
 function findLargest(a, b, c) {
   let max = a;
-  if (max < b) {
+  if (b > max) {
     max = b;
   }
-  if (max < c) {
+  if (c > max) {
     max = c;
-    return max;
   }
+  return max;
 }
+
+
 
 
