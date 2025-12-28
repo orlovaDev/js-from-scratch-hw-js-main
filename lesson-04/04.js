@@ -17,6 +17,14 @@
 
 
 function doubleEachCharacter(str) {
-    let newStr
-    
+    let newStr = "";
+    for(let i = 0; i < str.length; i++) {
+      newStr = newStr + str[i] + str[i]
+    }
+    return newStr
 }
+
+const result = doubleEachCharacter("Привет") // 0,1,2,3,4,5
+console.log(result);
+
+
