@@ -11,5 +11,9 @@
 
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
+  
+
+
+
 
 function doubleEachCharacter() {}
