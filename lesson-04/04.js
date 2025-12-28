@@ -16,4 +16,7 @@
 
 
 
-function doubleEachCharacter() {}
+function doubleEachCharacter(str) {
+    let newStr
+    
+}
