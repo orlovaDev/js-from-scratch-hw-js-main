@@ -35,6 +35,10 @@ const gallery = {
   "The Scream": "Edvard Munch",
 };
 
-function updateGallery(gallery, title, newMeaning) {
-  gallery[title] = newMeaning;
+function updateGallery(obj, title, info) {
+   if (title in obj) {
+    obj[title] = info;
+  } else {
+    obj[title] = info;
+  }
 }
