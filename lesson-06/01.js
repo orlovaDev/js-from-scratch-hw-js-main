@@ -33,3 +33,12 @@ const filter = (array, callback) => {
   }
   return newArray
 }
+
+
+// 2-й вариант решения задачи
+
+// const filter = (array, callback) => {
+//   return array.filter((element, index) => {
+//     return callback(element, index);
+//   });
+// };
