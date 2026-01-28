@@ -9,6 +9,8 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
+
 function truncate(str, maxLength) {
-  // your code
+  return str.length > maxLength 
+    ? str.slice(0, maxLength) + "..." : str;
 }
