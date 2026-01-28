@@ -4,7 +4,22 @@
  */
 
 function isNumeric(str) {
-  // your code
+ const newStr = str.trim()
+ if (newStr === "" || newStr === ".") {
+return false
+ }
+ let hasDot = false;
+ for (let i = 0; i < newStr.length; i++) {
+   const char = newStr[i];
+   if (char >= "0" && char <= "9") {
+    continue
+   } else if (char === "." && !hasDot) {
+    hasDot = true
+   } else {
+    return false
+   }
+ }
+ return true
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
